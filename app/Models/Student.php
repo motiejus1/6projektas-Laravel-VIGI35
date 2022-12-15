@@ -17,4 +17,6 @@ class Student extends Model
     public function studentGroup() {
         return $this->belongsTo(Group::class, 'group_id', 'id');
     }
+
+    //kiek duomenu sitas metodas grazina? 1 grupe
 }

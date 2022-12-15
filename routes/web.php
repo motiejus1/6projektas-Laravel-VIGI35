@@ -26,3 +26,4 @@ Route::get('/', function () {
 Route::get('/students/index',[StudentController::class, 'index'])->name('students.index');
 
 Route::get('/groups/index', [GroupController::class, 'index'])->name('groups.index');
+Route::get('/groups/show/{group}', [GroupController::class, 'show'])->name('groups.show');

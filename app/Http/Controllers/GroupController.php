@@ -49,7 +49,14 @@ class GroupController extends Controller
      */
     public function show(Group $group)
     {
-        //
+
+        $students = $group->groupStudents;// cia visi grupes studentai
+
+
+        return view('groups.show', [
+            'group' => $group,
+            'students' => $students
+        ]);
     }
 
     /**

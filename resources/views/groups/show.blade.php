@@ -1,13 +1,18 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Students</title>
+    <title>Group Info</title>
 </head>
 <body>
-    <h1>Students</h1>
+    <h2>Group Info</h2>
+
+    <h3>Group title {{$group->title}}</h3>
+
+
     <table>
         <tr>
             <th>ID</th>
@@ -23,7 +28,7 @@
                 <td>{{$student->name}}</td>
                 <td>{{$student->surname}}</td>
                 <td>{{$student->email}}</td>
-                <td><a href="{{route('groups.show',$student->studentGroup )}}">{{$student->studentGroup->title}}</a></td> //nuoroda i grupes show puslapi kur yra visa detali informacija apie grupe
+                <td><a href="{{route('groups.show',$student->studentGroup )}}">{{$student->studentGroup->title}}</a></td> 
 
                 
 
